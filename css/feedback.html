@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="stlye.css">
+    <link rel="stylesheet" href="file:///E:/fontawesome/css/all.css">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'poppins' sans-serif;
+    }
+
+    html,body{
+        display: grid;
+        height: 100%;
+        place-items: center;
+        text-align: center;
+        background: #000;
+    }
+
+    .container
+    {
+        width: 400px;
+        background: #111;
+        padding: 20px 30px;
+        border: 1px solid #444;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .container .star-widget input{
+display: none;
+
+    }
+    .star-widget label{
+      display: none;
+      font-size: 40px;
+      color: #444;
+      padding: 10px;
+      float:right;
+      transition: all 0.2s ease;
+    }
+
+    .star-widget input:not(checked) ~ label:hover {
+        color: #fd4;
+
+    }
+
+</style>
+<body>
+   <div class ="container">
+       <div class="star-widget">
+           <input type="radio name="rate" id="rate5">
+           <label for="rate5" class="fas fa-star"></label>
+           <input type="radio name="rate" id="rate4">
+           <label for="rate4" class="fas fa-star"></label>
+           <input type="radio name="rate" id="rate3">
+           <label for="rate3" class="fas fa-star"></label>
+           <input type="radio name="rate" id="rate2">
+           <label for="rate2" class="fas fa-star"></label>
+           <input type="radio name="rate" id="rate1">
+           <label for="rate1" class="fas fa-star"></label>
+           
+
+       </div>
+   </div>
+</body>
+</html>

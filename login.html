@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <link rel="stylesheet"  type="text/css"  href="./login.css">
+    <background-color="green"></background-color>
+    
+</head>
+<style>
+    * {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background: url('./veg1.jpg') no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+
+.login-form {
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: #fhgfh;
+}
+
+.login-form h1 {
+    font-size: 40px;
+    text-align:left;
+    text-transform: uppercase;
+    margin: 40px 0;
+    color: aqua;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.login-form p {
+    font-size: 20px;
+    margin: 15px,0;
+    color: white;
+}
+
+.login-form input {
+    font-size: 16px;
+    width: 100%;
+    padding: 15px 10px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 10px 15px;
+    width: 50%;
+    border-radius: 5px;
+    border: 0;
+    text-align: center;
+    align-items: center;
+    color:red;
+}
+
+</style>
+<body>
+    <div id="frm">
+    <div class="login-form">
+        <h1>Login Form</h1>
+        <form action="loginconn.php" method="post" name="frm" >
+            <p>User name</p>
+            <br>
+            <input type="email" name="email" placeholder="Username" >
+            <br><br>
+            <p>Password</p>
+            <br>
+            <input type="password" name="password" placeholder="Password" required minlength="6" pattern="[^' ']+" title="No Spaces"> 
+            <br>
+            <br> 
+            <input type="submit" value=Login>
+            
+            </form>
+            <br>
+            <b>Don't Have An Account,Please Register</b>
+            <a href="registration.html">Register</a>
+    </div>
+    <script>
+        function validation()
+        {
+            var email = document.frm["login-form"]["email"]
+            if(email.value=="")
+            window.alert("please enter your username");
+            email.focus();
+            return false;    
+         }
+         if(email.value.indexOf("@",0)<0)
+         {
+             window.alert("please enter a valid email address" );
+             email.focus();
+             return false;
+
+         }
+         return true;
+        }
+    </script>
+
+    
+</body>
+</html>

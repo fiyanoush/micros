@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        body{
+            background: url('./veg1.jpg');
+            background-size: cover;
+            color: #fff;
+        }
+        .product{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+        }
+        .product h1{
+            font-size: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 40px 0;
+            color: pink;
+        }
+        .product p{
+            font-size: 20px;
+            margin: 6px 0;
+        }
+        .product input{
+            font-size: 16px;
+            padding: 15px 10px;
+            width: 100%;
+            border: 0;
+            border-radius: 5px;
+            outline: none;
+        }
+        .product button{
+             background-color:#fff;
+             color:black;
+             border:2px solid #444;
+             border-radius: 5px;
+             padding: 10px 15px;
+             border: 0;
+             margin: 20px 0;
+             font-size: 18px;
+             font-weight: bold;
+        }
+        .product button:hover{
+            color: pink;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="product">
+        <h1>ADD PRODUCT</h1>
+        <form action="addproductconn.php" method="post">
+            <p>Product name:</p>
+            <input type="text" name="pname" placeholder="product name">
+            <p>Old Price:</p>
+            <input type="text" name="oprice" placeholder="old price">
+            <p>Current Price:</p>
+            <input type="text" name=" cprice" placeholder="current price">
+            <p>Quantity:</p>
+            <input type="text" name="quantity" placeholder="quantity">
+            <p>Features:</p>
+            <input type="text" name="features" placeholder="features">
+            <p>Deatils:</p>
+            <input type="text" name="details" placeholder="details">
+            <p>Image</p>
+            <input type="file" name="image" placeholder="image">
+            <button type="reset" value="clear">Clear</button>
+            <button type="submit" value="Submit">Submit</button>
+        </form>
+    </div>
+                        </div>
+                    </div>
+    
+                </form>
+    
+    
+            </div>
+        </div>
+    
+    </section>
+    
+    
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cnd.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"crossorigin="anoymous">
+ 
+</head>
+<style>
+     @import"https://maxcnd.bootstrapcnd.com/font-awesome/4.7.0/css/font-awesome.min.css";
+     *{ 
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+  body {
+
+        background-image: url(./veg1.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+       
+        font-family: 'Times New Roman', Times, serif;
+        background-attachment: fixed;
+    }
+
+    .menu-bar 
+    {
+        background: rgb(0,100,0);
+        text-align: center;
+    }
+    .menu-bar ul {
+          display: inline-flex;
+          list-style-type: none;
+          color: #fff;
+
+    }   
+
+    .menu-bar ul li 
+{
+    width: 120px;
+    margin: 15px ;
+    padding: 15px;
+    }
+
+    .menu-bar ul li  a
+    {
+        text-decoration: none;
+        color: white;
+    }
+    .active, .menu-bar ul li:hover
+    {
+        background-color: #2bab0d;
+        border-radius: 3px;
+
+    }
+
+.menu .fa{
+    margin-right: 8px;
+
+    }
+.sub-menu-1{
+    display: none;
+
+    }
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute ;
+    background: rgb(0,100,0);
+    margin-top: 15px;
+    margin-left: -15px;
+    }
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+    
+    }
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    }
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+     border-bottom: none;
+    }
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: #b2ff00;
+    }
+.fa-angle-right{
+    float:right;
+}
+.sub-menu-2
+{
+    display: none;
+
+}
+.hover-me:hover .sub-menu-2
+{
+   position: absolute; 
+   display: block;
+   margin-top: -40px;
+   margin-left: 140px;
+   background: rgb(0,100,0);
+ }
+
+</style>
+<body>
+    <div class= "menu-bar">
+    <ul>
+       <li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+        <li><a href="about.html"><i class="fa fa-book"></i>About Us</a>
+        <div class="sub-menu-1">
+        
+        </div>
+        </li>
+        <li><a href="contactus.html"><i class="fa fa-phone"></i>Contact</a>
+        <div class="sub-menu-1">
+            
+          </div>
+        </li>
+        <li><a href="#"></a><i class="fa fa-clone"></i>Product</a>
+        <div class="sub-menu-1">
+            <ul>
+                <li>
+                    <a href="product_add.html">Add product</a>
+                </li>
+     
+              <li>
+                  <a href="#">Delete product</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#"><i class="fa fa-book" aria-hidden="true"></i>Feedback</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li>
+                        <a href="#">View Feedback</a>
+                    </li>
+                </ul>
+              </div>
+            </li>
+      
+        <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Logout</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li class="hover-me">
+                        <a href="#">Are you sure?</a><i class="fa-angle-right"></i>
+                           <div class="sub-menu-2">
+                            <ul>
+                                <li>
+                                    <a href="index.html">Yes</a>
+                                </li>
+                                <li>
+                                    <a href="home.html">No</a>
+                                </li>
+                            </ul>
+                           </div>
+                    </li>
+                </ul>
+            </div>
+            </li> 
+    </ul>
+    </div>
+</body>
+</html>

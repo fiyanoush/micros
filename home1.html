@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Homepage</title>
+</head>
+<style>
+     @import"https://maxcnd.bootstrapcnd.com/font-awesome/4.7.0/css/font-awesome.min.css";
+     { 
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+  body {
+
+        background-image: url(./veg1.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+       
+        font-family: 'Times New Roman', Times, serif;
+        background-attachment: fixed;
+    }
+
+    .menu-bar 
+    {
+        background: rgb(0,100,0);
+        text-align: center;
+    }
+    .menu-bar ul {
+          display: inline-flex;
+          list-style-type: none;
+          color: #fff;
+
+    }   
+
+    .menu-bar ul li 
+{
+    width: 120px;
+    margin: 15px ;
+    padding: 15px;
+    }
+
+    .menu-bar ul li  a
+    {
+        text-decoration: none;
+        color: white;
+    }
+    .active, .menu-bar ul li:hover
+    {
+        background-color: #2bab0d;
+        border-radius: 3px;
+
+    }
+
+    .menu-bar .fa{
+        margin-right: 8px;
+
+    }
+    .sub-menu-1{
+        display: none;
+
+    }
+    .menu-bar ul li:hover .sub-menu-1{
+        display: block;
+        position: absolute ;
+        background: rgb(0,100,0);
+        margin-top: 15px;
+        margin-left: -15px;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul{
+        display: block;
+        margin: 10px;
+    
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li{
+        width: 150px;
+        padding: 10px;
+        border-bottom: 1px dotted white;
+        background: transparent;
+        border-radius: 0;
+        text-align: left;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+        border-bottom: none;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+        color: #b2ff00;
+    }
+.fa-angle-right{
+    float:right;
+}
+
+
+</style>
+<body>
+    <div class= "menu-bar">
+        <nav>
+            <label class="logo" >CUSTOMER </label>
+       
+    <ul>
+       <li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+        <li><a href="about.html"><i class="fa fa-book"></i>About Us</a>
+        
+        <li><a href="contactus.html"><i class="fa fa-phone"></i>Contact</a>
+       
+        <li><a href="#"></a><i class="fa fa-clone"></i>Product</a>
+        
+        <li><a href="feedback.html"><i class="fa fa-book" aria-hidden="true"></i>Feedback</a>
+            
+        <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Logout</a>
+            
+            </li> 
+    </ul> </nav>
+    </div>
+</div>
+    </div>
+    </div>
+</body>
+</html>
